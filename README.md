@@ -1,36 +1,188 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PointagePro
 
-## Getting Started
+PointagePro est une application web de gestion des ressources humaines développée pour Infinity Soft.
 
-First, run the development server:
+Elle permet la gestion des employés, le suivi des présences, le pointage GPS, la validation par QR Code, la gestion des congés ainsi que la génération de rapports administratifs.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Fonctionnalités
+
+### Authentification
+
+- Connexion Administrateur
+- Connexion Employé
+- Gestion des rôles
+- Protection des routes
+
+### Gestion des employés
+
+- Ajouter un employé
+- Modifier un employé
+- Supprimer un employé
+- Consulter la liste des employés
+
+### Pointage
+
+- Pointage d'entrée
+- Pointage de sortie
+- Vérification GPS
+- Validation QR Code
+- Détection des retards
+
+### Gestion des congés
+
+- Création de demandes de congé
+- Validation des demandes
+- Refus des demandes
+- Historique des congés
+
+### Rapports
+
+- Consultation des pointages
+- Recherche par employé
+- Export PDF
+- Tableau de bord RH
+
+### Profil
+
+- Consultation des informations utilisateur
+- Gestion des rôles Admin / Employé
+
+---
+
+## Technologies utilisées
+
+### Frontend
+
+- Next.js 15
+- React
+- TypeScript
+- Tailwind CSS
+- Recharts
+- React Hot Toast
+- Lucide React
+
+### Backend
+
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- JWT
+- bcryptjs
+
+---
+
+## Architecture
+
+```text
+frontend/
+│
+├── src/app
+├── src/components
+├── src/lib
+└── public
+
+backend/
+│
+├── controllers
+├── models
+├── routes
+├── middleware
+└── server.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Base de données
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Collections MongoDB :
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+users
+attendances
+leaves
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Cloner le projet
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+git clone https://github.com/azizyy1/PointagePro.git
+```
 
-## Deploy on Vercel
+### Backend
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+cd backend
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+npm install
+
+npm run dev
+```
+
+### Frontend
+
+```bash
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+---
+
+## Variables d'environnement
+
+Créer un fichier `.env` dans le backend :
+
+```env
+PORT=5001
+
+MONGO_URI=YOUR_MONGODB_URI
+
+JWT_SECRET=YOUR_SECRET_KEY
+```
+
+---
+
+## Comptes de démonstration
+
+### Administrateur
+
+```text
+admin@pointagepro.com
+123456
+```
+
+### Employé
+
+```text
+salma@pointagepro.com
+123456
+```
+
+---
+
+## Société
+
+Infinity Soft est une entreprise spécialisée dans :
+
+- Développement Web
+- Développement Mobile
+- Cloud Computing
+- Cybersécurité
+- Intelligence Artificielle
+
+---
+
+## Auteur
+
+Hajar Azizi
+
+EMSI – Ingénierie Informatique
+
+2025 – 2026

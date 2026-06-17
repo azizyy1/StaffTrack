@@ -1,4 +1,4 @@
-# PointagePro
+# StaffTrack
 
 PointagePro est une application web de gestion des ressources humaines développée pour Infinity Soft.
 

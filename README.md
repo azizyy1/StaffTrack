@@ -179,10 +179,4 @@ Infinity Soft est une entreprise spécialisée dans :
 
 ---
 
-## Auteur
 
-Hajar Azizi
-
-EMSI – Ingénierie Informatique
-
-2025 – 2026
